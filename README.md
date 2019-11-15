@@ -13,3 +13,21 @@
 is to build dev&prod in the same time
 - `npm run test` - to start jest test
 - `npm run lint` - to run lint test
+
+
+#### Notes
+we use `vue-css-ts` library https://github.com/numsg/vue-css-ts
+- If the style file name like error.scss, the style is a global style, and if the file name is error.module.scss, the style is a scoped style
+e.g. 
+```
+import Styles from './error.module.scss';
+import ErrorHtml from './error.html';
+
+@Component({
+    template: ErrorHtml,
+    style: Styles,
+    components: {
+      'err-con': ErrorChildComponent
+    }
+})
+```
