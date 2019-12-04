@@ -1,6 +1,6 @@
 import Vue from "vue";
 
-import VueTsCss from 'vue-css-ts';
+import VueTsCss from "vue-css-ts";
 import HelloComponent from "./components/hello/hello";
 
 Vue.use(VueTsCss);
@@ -22,6 +22,6 @@ new Vue({
     `,
     data: { name: "World" },
     components: {
-        HelloComponent
-    }
+        HelloComponent,
+    },
 });
