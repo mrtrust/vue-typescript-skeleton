@@ -1,16 +1,17 @@
-import { mount } from '@vue/test-utils';
+import { mount } from "@vue/test-utils";
 import HelloComponent from "./hello";
 
-describe('Hello.ts', () => {
-  it('should render', () => {
-    const name = 'World';
+describe("Hello.ts", () => {
+  it("should render", () => {
+    const name = "World";
     const initialEnthusiasm = 5;
 
     const wrapper = mount(HelloComponent, {
       propsData: {
-        name, initialEnthusiasm
-      }
+        name,
+        initialEnthusiasm,
+      },
     });
-    expect(wrapper.find('.greeting').text()).toBe('Hello World!!!!!')
-  })
+    expect(wrapper.find(".greeting").text()).toBe("Hello World!!!!!");
+  });
 });

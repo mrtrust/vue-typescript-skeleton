@@ -1,10 +1,10 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
-import Styles from './hello.scss';
-import HelloHtml from './hello.html';
+import Styles from "./hello.scss";
+import HelloHtml from "./hello.html";
 
 @Component({
   template: HelloHtml,
-  style: Styles
+  style: Styles,
 })
 export default class HelloComponent extends Vue {
   @Prop() name!: string;
@@ -22,6 +22,6 @@ export default class HelloComponent extends Vue {
   }
 
   get exclamationMarks(): string {
-    return Array(this.enthusiasm + 1).join('!');
+    return Array(this.enthusiasm + 1).join("!");
   }
 }

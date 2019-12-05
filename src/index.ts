@@ -12,16 +12,16 @@ Vue.use(VueTsCss);
 // }).$mount('#app'
 
 new Vue({
-    el: "#app",
-    template: `
+  el: "#app",
+  template: `
     <div>
         Name: <input v-model="name" type="text">
         <h1>Hello Component</h1>
         <hello-component :name="name" :initialEnthusiasm="5" />
     </div>
     `,
-    data: { name: "World" },
-    components: {
-        HelloComponent,
-    },
+  data: { name: "World" },
+  components: {
+    HelloComponent,
+  },
 });
