@@ -18,7 +18,14 @@
         ],
         "arrow-parens": false,
         // Pending fix for shorthand property names.
-        "object-literal-sort-keys": false
+        "object-literal-sort-keys": false,
+        "no-implicit-dependencies": [true, "dev"],
+        "no-duplicate-imports": {
+            "severity": "error",
+            "options": {
+                "allow-namespace-imports": true
+            }
+        }
     },
     "rulesDirectory": []
 }

@@ -6,3 +6,4 @@
 ##### next steps
 * add prettier
 * router
+* consider about stylelint-prettier
